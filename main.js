@@ -1,5 +1,3 @@
-
-//tablice z repertuarem mszy
 var tab_id = ['tab_mass_weekday_saturday', 'tab_mass_friday', 'tab_mass_sunday'];
 
 var tab_mass_weekday_saturday = ['07:00', '08:00', '18:00'];
@@ -10,7 +8,7 @@ const formatTime = "HH:mm";
 const formatDay = 'd';
 
 var currentTime = moment('08:00',formatTime);
-var currentDay = 0; //0 nd 1 pn 2 wt 3 sr 4 czw 5 pt 6 sb
+var currentDay = 0;
 
 function selectTab() {
      // moment().format('d'); jakbyś wprowadził skrypt w życie :)
@@ -26,6 +24,7 @@ function selectTab() {
         return tab = tab_mass_sunday;
     }
 }
+
 
 
 //spawdź czy jest aktualnie transmisja
