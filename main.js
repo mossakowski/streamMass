@@ -74,6 +74,8 @@ function checkWhenNextMass(tab) {
     }    
 }
 
+console.log('test fetch');
+
 
 function displayStream() {
     console.log('Tu będzie iframe, jest transmisja!');
