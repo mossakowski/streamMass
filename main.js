@@ -80,17 +80,5 @@ function displayStream() {
 }
 
 
-
 checkIsMassNow();
 
-
-//sprawdź kiedy następna transmisja?
-
-//Wyświet dane z tablic
-//1. sprawdź różne dane
-//2. sprawdź nazewnictwo
-//3. Stwórz to w React
-
-
-    //console.log("msza zaczyna się: " + items.format("H:mm") + " start transmisji: " + startStream.format("H:mm") + " zakończenie: " + endStream.format("H:mm"));
-    //usunieto .format("H:mm");
