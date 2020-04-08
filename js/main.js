@@ -4,7 +4,8 @@ var tab_mass_schedule = {
     tab_mass_sunday : ['07:00', '08:30', '10:00', '11:30', '16:30', '19:30']
 }
 
-const screen = document.getElementById('screen');
+const mass_screen = document.getElementById('mass_screen'); 
+const mass_next_info = document.getElementById('mass_next_info'); 
 
 const format_time = "HH:mm";
 const format_day = 'd';
@@ -75,22 +76,24 @@ function app() {
         if(i === 0) {
         let next_day = moment(current_day, format_day).add(1,'d').format(format_day);
         next_day = parseInt(next_day);
-            console.log("Zapraszamy na jutrzejszą msze o: " + selectTab(next_day)[0]);
+            let text = "Zapraszamy na jutrzejszą msze o: " + selectTab(next_day)[0];
             hideStream();
+            mass_next_info.innerHTML = text;
         } else {
-        console.log("Następna msza odbędzie się o: " + tab_next_mass[0]);
-        hideStream();
+            let text = "Następna msza odbędzie się o: " + tab_next_mass[0];
+            mass_next_info.innerHTML = text;
+            hideStream();
         }    
     }
 
     function showStream() {
-        screen.style.display = "block";
-        console.log('jest ekran');    
+        mass_screen.style.display = "block";
+        mass_next_info.style.display = "none";
     }
 
     function hideStream() {
-        screen.style.display = "none";
-        console.log('nie ma transmisji!');
+        mass_screen.style.display = "none";
+        mass_next_info.style.display = "block";
     }
 
         checkIsMassNow();

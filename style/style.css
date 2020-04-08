@@ -1,0 +1,14 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    margin-top: 20px;
+}
+
+.col-12 {
+    text-align: center;
+}
+
